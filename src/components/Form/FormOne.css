@@ -1,0 +1,33 @@
+.form__container {
+  background-color: #fff;
+  width: 40%;
+  height: auto;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.form__title {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.btnSiguiente {
+  background-color: #10B981;
+}
+
+.img__form {
+  width: 30px;
+}
+
+.actions__form {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 8px 32px;
+  font-weight: 500;
+}

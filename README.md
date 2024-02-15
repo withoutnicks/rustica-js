@@ -1,8 +1,13 @@
-# React + Vite
+# Proyecto Rustica 🏪
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Tareas pendientes
+[⚪] Refactorizar el css de los componentes form
+[⚪] Agregar seccion donde se muestren las reservas del usuario
+[⚪] Agregar la seleccion de platos a consumir el dia de la reserva en el formulario
+[⚪] Validar los inputs de los form
+[⚪] Implementar una pagina de error 
+[⚪] Definir quien sera la pasarela de pago
+[⚪] Diagramar la bd relacional
+[⚪] Elegir el gestor de bd
+[⚪] Elegir entorno de trabajo para el backend
+[⚪] Conectar la bd con el proyecto backend

@@ -15,16 +15,16 @@ function FocusSlider() {
     <div className="slider-container">
       <Slider {...settings}>
         <div>
-          <img src="./img/chefs.jpg" className="img-sld" />
+          <img src="./img/chefs.jpg" className="img-sld" loading="lazy" />
         </div>
         <div>
-          <img src="./img/comida.jpg" className="img-sld" />
+          <img src="./img/comida.jpg" className="img-sld" loading="lazy" />
         </div>
         <div>
-          <img src="./img/fiesta.jpg" className="img-sld" />
+          <img src="./img/fiesta.jpg" className="img-sld" loading="lazy" />
         </div> 
         <div>
-          <img src="./img/salon.jpg" className="img-sld" />
+          <img src="./img/salon.jpg" className="img-sld" loading="lazy"/>
         </div>
       </Slider>
     </div>

@@ -6,7 +6,7 @@ export const Navbar = () => {
     <>
       <nav className="nav">
         <div className="img__logo">
-          <img src="./logo-lg.png" alt="Logo extendido de Rustica" />
+          <img src="./logo-lg.webp" alt="Logo extendido de Rustica" />
         </div>
         <Link className="btnReserva" to={'/form'}>
           Nueva Reserva

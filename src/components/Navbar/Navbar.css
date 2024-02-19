@@ -7,10 +7,11 @@
 }
 
 .img__logo {
-  width: 170px;
+  width: auto;
 
   & img {
-    width: 100%;
+    width: 170px;
+    height: 51px;
   }
 }
 

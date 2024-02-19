@@ -3,6 +3,7 @@ import { Aboutus } from './components/AboutUs/AboutUs'
 import { Divider } from './components/Divider/Divider'
 import { Navbar } from './components/Navbar/Navbar'
 import { Platos } from './components/Platos/Platos'
+import { Cliente } from './components/Usuario/cliente'
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <main>
         <Navbar />
         <hr />
+        <Divider titleDivider="Reservas" />
+        <Cliente />
         <Divider titleDivider="Nuestros platos" />
         <Platos />
         <Divider titleDivider="Sobre Nosotros" />

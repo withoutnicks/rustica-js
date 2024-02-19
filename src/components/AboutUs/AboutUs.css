@@ -1,6 +1,6 @@
 .container__aboutus {
   width: 95%;
-  height: 500px;
+  height: auto;
   margin: 0 auto;
   margin-bottom: 16px;
   display: flex;

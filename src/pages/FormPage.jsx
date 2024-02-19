@@ -1,37 +1,67 @@
-import './FormPage.css'
-import { useState } from "react"
-import { Sidebar } from '../components/Sidebar/Siderbar'
-import { FormOne } from '../components/Form/FormOne'
-import { FormTwo } from '../components/Form/FormTwo'
-import { FormTree } from '../components/Form/FormTree'
+import "./FormPage.css";
+import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 
 function Form() {
-  
-  const [showFormTwo, setShowFormTwo] = useState(false);
-  const [showFormTree, setShowFormTree] = useState(false);
+  const { register, handleSubmit } = useForm();
 
-  const handleFormOneSubmit = () => {
-    setShowFormTwo(true);
+  const sendData = (data) => {
+    console.log(data);
   };
 
-  const handleFormTwoSubmit = () => {
-    setShowFormTree(true);
-  };
-  
   return (
     <>
       <section className="form-container">
-        <Sidebar />
-        {showFormTree ? (
-          <FormTree />
-        ) : showFormTwo ? (
-          <FormTwo onSubmit={handleFormTwoSubmit} />
-        ) : (
-          <FormOne onSubmit={handleFormOneSubmit} />
-        )}
+        <article className="form-one">
+          <div className="form__title">
+            <img src="./icons/menu.svg" className="img__form" />
+            <h4> Escribe tus datos</h4>
+          </div>
+          <small>Estos datos son necesario para la reserva</small>
+          <br />
+          <form onSubmit={handleSubmit(sendData)}>
+            <input
+              type="text"
+              placeholder="Tu nombre"
+              autoComplete="off"
+              {...register('nombres')}
+            />
+
+            <input
+              type="text"
+              placeholder="Tus apelldios"
+              autoComplete="off"
+              {...register('apellidos')}
+            />
+
+            <input
+              type="email"
+              placeholder="Tu correo"
+              autoComplete="off"
+              {...register('correo')}
+            />
+
+            <input
+              type="datetime-local"
+              {...register('fecha')}
+            />
+
+            <input
+              type="number"
+              placeholder="Cuantas personas asistiran"
+              autoComplete="off"
+              {...register('invitados')}
+            />
+
+            <div className="actions__form">
+              <Link className="btnCancelar" to={"/"}>Cancelar </Link>
+              <button className="btnSiguiente">Siguiente</button>
+            </div>
+          </form>
+        </article>
       </section>
     </>
-  )
+  );
 }
 
-export default Form
+export default Form;

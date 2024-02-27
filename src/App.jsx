@@ -1,14 +1,13 @@
-import './App.css'
-import { Aboutus } from './components/AboutUs/AboutUs'
-import { Divider } from './components/Divider/Divider'
-import { Navbar } from './components/Navbar/Navbar'
-import { Platos } from './components/Platos/Platos'
-import { Reservas } from './components/Reservas/Reservas'
+import { Aboutus } from './components/AboutUs'
+import { Divider } from './components/Divider'
+import { Navbar } from './components/Navbar'
+import { Platos } from './components/Platos'
+import { Reservas } from './components/Reservas'
 
 function App() {
   return (
     <>
-      <main>
+      <main className="mx-auto max-w-4xl font-sans">
         <Navbar />
         <hr />
         <Reservas />

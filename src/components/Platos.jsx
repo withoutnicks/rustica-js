@@ -1,10 +1,9 @@
-import { CardPlato } from './CardPlato'
-import './Platos.css'
+import { CardPlato } from './CardPlato/CardPlato'
 
 export const Platos = () => {
   return (
     <>
-      <section className="container__platos">
+      <section className="mx-4 flex justify-around flex-wrap gap-4 h-auto p-6">
         <CardPlato 
           urlImg="https://i.pinimg.com/236x/74/b8/e5/74b8e5cd81f5c4ba6f05a73c6e23304d.jpg"
           nombPlato="Ceviche"

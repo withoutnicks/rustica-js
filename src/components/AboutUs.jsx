@@ -1,11 +1,10 @@
-import "./AboutUs.css";
 import FocusSlider from "./Slider/Slider";
 
 export const Aboutus = () => {
   return (
     <>
-      <section className="container__aboutus">
-        <article className="container__info">
+      <section className="mx-4 h-auto flex p-4 gap-6">
+        <article className="w-1/2 h-auto px-3 flex flex-col text-center">
           <p>
             El sueño empezó con una pequeña tienda en Jesús María pero gracias a
             la dedicación, creatividad y empeño, hoy contamos con 48 locales en
@@ -24,7 +23,7 @@ export const Aboutus = () => {
           <p>Rustica Restaurantes</p>
           <p>Fundacion Rustica</p>
         </article>
-        <article className="container__slider">
+        <article className="w-1/2 h-auto flex justify-center">
           <FocusSlider />
         </article>
       </section>

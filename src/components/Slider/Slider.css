@@ -1,0 +1,8 @@
+button.slick-arrow {
+  background-color: black;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: black;
+  }
+}

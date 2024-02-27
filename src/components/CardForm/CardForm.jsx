@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import "./CardForm.css";
 
 export const CardForm = ({urlImg, nombPlato, preciPlato, onCantidadChange }) => {
 
@@ -20,22 +19,20 @@ export const CardForm = ({urlImg, nombPlato, preciPlato, onCantidadChange }) => 
 
   return (
     <>
-      <div className="plato__container">
-        
-        <div className="plato__info">
-          <img src={urlImg} className="cardf__img"/>
-          <div className="group">
-            <h4 className="plato__title">{nombPlato}</h4>
-            <small className="plato__precio">S/.{preciPlato}</small>
+      <div className="flex p-4 justify-between items-center my-2 shadow-md">       
+        <div className="flex gap-3">
+          <img src={urlImg} className="w-16 h-16 rounded-md object-cover"/>
+          <div className="flex flex-col justify-center">
+            <h4 className='font-medium'>{nombPlato}</h4>
+            <small>S/.{preciPlato}</small>
           </div> 
         </div>
 
-        <div className="plato__cantidad">
-          <button type="button" className="restarCant" onClick={handleRestar}>-</button>
-          <p className="cantidad">{cantidad}</p>
-          <button type="button" className="sumarCant" onClick={handleSumar}>+</button>
-        </div>
-        
+        <div className="flex gap-4 items-center">
+          <button type="button" className="font-medium cursor-pointer" onClick={handleRestar}>-</button>
+          <p className="select-none">{cantidad}</p>
+          <button type="button" className="font-medium cursor-pointer" onClick={handleSumar}>+</button>
+        </div>      
       </div>
     </>
   )

@@ -1,10 +1,9 @@
-import { CardReserva } from './CardReserva'; 
-import './Reservas.css';
+import { CardReserva } from './CardReservas/CardReserva'; 
 
 export const Reservas = () => { 
  return (
     <>
-       <section className="container__reservas">
+       <section className="w-full h-auto my-4 flex flex-col items-center gap-4">
        <CardReserva 
          numRes="85621437"
          fechaReserva="12/05/2024"

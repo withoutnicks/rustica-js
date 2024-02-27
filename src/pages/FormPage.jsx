@@ -1,4 +1,3 @@
-import "./FormPage.css";
 import { useState } from 'react';
 import { CardForm } from "../components/CardForm/CardForm";
 import { Link } from "react-router-dom";
@@ -23,17 +22,17 @@ function Form() {
 
   return (
     <>
-      <section className="form-container">
-        <article className="form-one">
-          <div className="form__title">
-            <img src="./icons/menu.svg" className="img__form" />
-            <h3>Completa tu reserva</h3>
+      <section className="bg-rus-primary w-full flex justify-center gap-3 p-5">
+        <article className="bg-white h-full p-3 rounded-lg">
+          <div className="flex gap-2 items-center">
+            <img src="./icons/menu.svg" className="w-8" />
+            <h3 className="font-semibold">Completa tu reserva</h3>
           </div>
-          <small className="msg__conditional">
-            * El precio de toda reserva es de <strong>S/. 50.00</strong> y va cambiar según los platos
-          </small>
-          <br />
-          <form>
+          <form className="flex flex-col gap-1 my-4">
+            <label htmlFor="txt-date" className="text-sm">* Seleccione el dia de su reserva</label>
+            <input type="datetime-local" id="txt-date" className="my-2 border p-2 accent-rus-primary"/>
+          </form>
+          <section>
             <CardForm 
               urlImg="https://i.pinimg.com/236x/74/b8/e5/74b8e5cd81f5c4ba6f05a73c6e23304d.jpg"
               nombPlato="Ceviche"
@@ -69,12 +68,16 @@ function Form() {
               onCantidadChange={handleCantidadChange}
             />
 
-            <div className="actions__form">
-              <Link className="btnCancelar" to={"/"}>Cancelar </Link>
-              <h2>Total: S/. {total.toFixed(2)}</h2>
-              <button className="btnSiguiente">Pagar</button>
+            <div className="flex justify-between mx-4 my-6 items-center">
+              <Link className="bg-slate-500 text-white rounded-md py-2 px-4" to={"/"}>Cancelar </Link>
+              <h2 className="font-medium">Total: S/. {total.toFixed(2)}</h2>
+              <button className="bg-green-500 text-white rounded-md py-2 px-4">Pagar</button>
             </div>
-          </form>
+
+            <label className="text-xs text-gray-700">
+              * El precio de toda reserva es de <strong>S/. 50.00</strong> y va cambiar según los platos
+            </label>
+          </section>
         </article>
       </section>
     </>

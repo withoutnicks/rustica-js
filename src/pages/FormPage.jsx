@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 import { CardForm } from "../components/CardForm/CardForm";
 import { Link } from "react-router-dom";
 
@@ -11,11 +11,11 @@ function Form() {
 
   const obtenerPrecio = (plato) => {
     const precios = {
-      'Ceviche': 35,
-      'Causa Rellena': 20,
-      'Arroz con Pollo': 30,
-      'Caldo de Gallina': 15,
-      'Papa a la guancaina': 20
+      "Ceviche": 35,
+      "Causa Rellena": 20,
+      "Arroz con Pollo": 30,
+      "Caldo de Gallina": 15,
+      "Papa a la guancaina": 20
     };
     return precios[plato];
   };

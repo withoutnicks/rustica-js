@@ -1,8 +1,8 @@
-import { Aboutus } from './components/AboutUs'
-import { Divider } from './components/Divider'
-import { Navbar } from './components/Navbar'
-import { Platos } from './components/Platos'
-import { Reservas } from './components/Reservas'
+import { Aboutus } from "./components/AboutUs";
+import { Divider } from "./components/Divider";
+import { Navbar } from "./components/Navbar";
+import { Platos } from "./components/Platos";
+import { Reservas } from "./components/Reservas";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Aboutus />
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

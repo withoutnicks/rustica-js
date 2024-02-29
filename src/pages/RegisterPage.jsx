@@ -5,7 +5,7 @@ function Register() {
     <>
       <section className="h-screen bg-cyan-800 flex justify-center items-center">
         <article className="w-96 bg-white rounded-lg shadow p-6">
-          <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900">
+          <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 text-center">
             Crear cuenta
           </h1>
 
@@ -25,13 +25,13 @@ function Register() {
             </div>
 
             <button type="submit" className="w-full text-dark bg-rose-100 hover:bg-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-              Crear Cuenta 
+              Registrarse
             </button>
              
             <p className="text-sm font-light text-gray-500">
               Ya tienes cuenta?
-              <Link to={"/"} className="font-medium text-primary-600 hover:underline">
-                regresar login
+              <Link to={"/"} className="font-medium text-primary-600 hover:underline ml-1">
+                Logeate
               </Link>
             </p>
 

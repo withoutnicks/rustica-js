@@ -5,6 +5,7 @@ import FormPage from "./pages/FormPage.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
+import HomePage from "./pages/HomePage.jsx";
 import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -12,8 +13,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const routers = createBrowserRouter([
   {
     path: "/",
-    element: <LoginPage />,
+    element: <App />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: "/home",
+    element: <HomePage />
   },
   {
     path: "/register",
@@ -24,8 +29,8 @@ const routers = createBrowserRouter([
     element: <FormPage />,
   },
   {
-    path: "/home",
-    element: <App />,
+    path: "/login",
+    element: <LoginPage />,
   },
 ]);
 

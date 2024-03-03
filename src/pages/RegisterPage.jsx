@@ -1,6 +1,22 @@
+import { useState } from 'react';
 import { Link } from "react-router-dom";
+import { createUser } from "../firebase/auth";
 
 function Register() {
+  const [$email, setEmail] = useState("");
+  const [$password, setPassword] = useState("");
+  const [$username, setUsername] = useState("");
+
+  const handleCreateUser = async (e) => {
+    e.preventDefault();
+  
+    try {
+      await createUser($email, $password, $username);
+    } catch (error) {
+      console.error("Error al crear usuario: ", error);
+    }
+  };
+  
   return (
     <>
       <section className="h-screen bg-stone-800 flex justify-center items-center">
@@ -9,22 +25,56 @@ function Register() {
             Crear cuenta
           </h1>
 
-          <form className="space-y-4 mt-4" action="#">
+          <form className="space-y-4 mt-4" onSubmit={handleCreateUser}>
+            <div>
+              <label htmlFor="username" className="block mb-2 text-sm font-medium text-gray-900">
+                Tu Username
+              </label>
+              <input 
+                className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg  block w-full p-2.5" placeholder="Gerado Caycho" 
+                type="text" 
+                name="username" 
+                id="username" 
+                autoComplete="off" 
+                required
+                onChange={(e) => setUsername(e.target.value)}
+              />
+            </div>
+
             <div>
               <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">
                 Tu Correo 
               </label>
-              <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg  block w-full p-2.5" placeholder="name@rustica.com" required />
+              <input 
+                className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg  block w-full p-2.5" placeholder="name@rustica.com" 
+                type="email" 
+                name="email" 
+                id="email" 
+                autoComplete="off" 
+                required
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </div>
 
             <div>
               <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900">
                 Tu Contraseña
               </label>
-              <input type="password" name="password" id="password" placeholder="*********" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5" required />
+              <input 
+                className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5" 
+                placeholder="*********" 
+                type="password" 
+                name="password" 
+                id="password" 
+                required
+                onChange={(e) => setPassword(e.target.value)}
+              />
             </div>
 
-            <button type="submit" className="w-full text-white bg-rose-600 hover:bg-rose-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+            <button 
+              type="submit" 
+              className="w-full text-white bg-rose-600 hover:bg-rose-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            >
               Registrarse
             </button>
              
@@ -36,6 +86,7 @@ function Register() {
             </p>
 
           </form> 
+
           </article>  
       </section>    
     </>

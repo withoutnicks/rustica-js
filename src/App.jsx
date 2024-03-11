@@ -20,10 +20,10 @@ function App() {
           </Link>
         </nav>
         <hr />
-        <Divider titleDivider="Nuestros platos" />
-        <Platos />
         <Divider titleDivider="Sobre Nosotros" />
         <Aboutus />
+        <Divider titleDivider="Nuestros platos" />
+        <Platos />
       </main>
     </>
   );

@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from 'react';
-import { loginUser } from "../firebase/auth";
 import { useNavigate } from "react-router-dom";
+import { Toaster } from 'sonner';
+import { loginUser } from "../firebase/auth";
 
 function Login() {
   const [$email, setEmail] = useState("");
@@ -16,7 +17,7 @@ function Login() {
       if (loginSuccess) {
         navigate("/home");
       } else {
-        console.log("Credenciales Incorrectas");
+        setEmail("")
       }
     } catch (error) {
       console.log("Algo salio mal", error);
@@ -80,6 +81,7 @@ function Login() {
 
         </article>
       </section>
+      <Toaster richColors/>  
     </>
   );
 }

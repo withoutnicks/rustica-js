@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 import { createUser } from "../firebase/auth";
+import { Toaster } from 'sonner';
 
 function Register() {
   const [$email, setEmail] = useState("");
@@ -11,7 +12,13 @@ function Register() {
     e.preventDefault();
   
     try {
-      await createUser($email, $password, $username);
+      const success = await createUser($email, $password, $username);
+
+      if(success) {
+        setEmail("");
+        setPassword("");
+        setUsername("");
+      }
     } catch (error) {
       console.error("Error al crear usuario: ", error);
     }
@@ -80,7 +87,7 @@ function Register() {
              
             <p className="text-sm font-light text-gray-500">
               Ya tienes cuenta?
-              <Link to={"/"} className="font-medium text-primary-600 hover:underline ml-1">
+              <Link to={"/login"} className="font-medium text-primary-600 hover:underline ml-1">
                 Logeate
               </Link>
             </p>
@@ -88,7 +95,8 @@ function Register() {
           </form> 
 
           </article>  
-      </section>    
+      </section>
+      <Toaster richColors/>    
     </>
   )
 }

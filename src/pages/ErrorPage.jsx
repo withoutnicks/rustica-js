@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 export default function ErrorPage() {
   const error = useRouteError();
-  //const imgBg = "./img/angryCat.png"
 
   return (
     <section className="h-screen bg-no-repeat flex flex-col justify-center items-center px-6 gap-4">

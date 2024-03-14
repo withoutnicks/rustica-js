@@ -1,21 +1,28 @@
-<img src="./public/logo-lg-white.png" alt="Logo" />
+```sh
+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+. 
+(      ____            _   _               _ ____       )
+ )    |  _ \ _   _ ___| |_(_) ___ __ _    | / ___|      ( 
+(     | |_) | | | / __| __| |/ __/ _` |_  | \___ \      )
+ )    |  _ <| |_| \__ \ |_| | (_| (_| | |_| |___) |     ( 
+(     |_| \_\\__,_|___/\__|_|\___\__,_|\___/|____/      )
+ )                                                      ( 
+ "+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+" 
+```
 
-<hr/>
-
-## Para empezar
+> [!WARNING]
+> Para la ejecucion del proyecto es necesario tener lo que se pide a continuacion.
 
 ### Prerequisitos
 
-- PNPM (es nuestra recomendación por su rapidez)
-
-  ```sh
-  npm install -g pnpm
+1. Node (NPM se instala por defecto) 
+  ```markdown
+   https://nodejs.org/en/download/
   ```
 
-- o NPM
+2. Instalar PNPM (Version mejorado de NPM)
 
   ```sh
-  npm install npm@latest -g
+   npm install -g pnpm
   ```
 
 ### Instalación
@@ -32,8 +39,13 @@
    pnpm install
    ```
 
-3. Ejecuta el proyecto
+3. Crear un archivo **.env** en la raiz del proyecto y leer **read.txt**
+
+> [!CAUTION]
+> No saltarse este paso, leyendo el archivo lo entendera
+
+4. Ejecuta el proyecto
 
    ```sh
-   pnpm run dev
+   pnpm dev
    ```

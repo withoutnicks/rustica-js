@@ -17,7 +17,7 @@ function FocusSlider() {
     <div className="w-72">
       <Slider {...settings}>
         <div>
-          <img src="./img/chefs.jpg" className="w-full h-96 object-cover" loading="lazy" />
+          <img src="./img/chefs.jpg" className="w-full h-96 object-cover" />
         </div>
         <div>
           <img src="./img/comida.jpg" className="w-full h-96 object-cover" loading="lazy" />

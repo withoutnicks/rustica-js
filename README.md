@@ -41,6 +41,12 @@
 
 3. Crear un archivo **.env** en la raiz del proyecto y leer **read.txt**
 
+<p align="center">
+
+![refencia](image.png)
+
+</p>
+
 > [!CAUTION]
 > No saltarse este paso, leyendo el archivo lo entendera
 

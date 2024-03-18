@@ -69,7 +69,7 @@ function Form() {
             />
 
             <div className="flex justify-between mx-4 my-6 items-center">
-              <Link className="bg-slate-500 text-white rounded-md py-2 px-4" to={"/"}>Cancelar </Link>
+              <Link className="bg-slate-500 text-white rounded-md py-2 px-4" to={"/home"}>Cancelar </Link>
               <h2 className="font-medium">Total: S/. {total.toFixed(2)}</h2>
               <button className="bg-green-500 text-white rounded-md py-2 px-4">Pagar</button>
             </div>

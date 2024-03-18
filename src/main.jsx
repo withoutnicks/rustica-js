@@ -1,5 +1,4 @@
 import App from "./App.jsx";
-import React from "react";
 import ReactDOM from "react-dom/client";
 import FormPage from "./pages/FormPage.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
@@ -35,7 +34,5 @@ const routers = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={routers} />
-  </React.StrictMode>
+  <RouterProvider router={routers} />
 );

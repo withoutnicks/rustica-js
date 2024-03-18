@@ -53,3 +53,15 @@
    ```sh
    pnpm dev
    ```
+
+## 🛠️ Stack
+- [![react-badge]][react-url] - The library for web and native user interfaces
+- [![tailwind-badge]][tailwind-url] - A utility-first CSS framework for rapidly building custom designs.
+- [![firebase-badge]][firebase-url] - App development platform that helps you develop and grow users' favorite apps and games.
+
+[tailwind-url]: https://tailwindcss.com/
+[tailwind-badge]: https://img.shields.io/badge/Tailwind-ffffff?style=for-the-badge&logo=tailwindcss&logoColor=38bdf8
+[react-url]: https://es.react.dev/
+[react-badge]: https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black
+[firebase-url]: https://firebase.google.com/?hl=es
+[firebase-badge]: https://img.shields.io/badge/Firebase-FFCA28.svg?style=for-the-badge&logo=Firebase&logoColor=black

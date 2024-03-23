@@ -27,7 +27,6 @@ function HomePage() {
     <>
       <main className="mx-auto max-w-4xl font-sans">
         <Navbar />
-        <hr />
         <Reservas />
         <Divider titleDivider="Nuestros platos" />
         <Platos />

@@ -3,7 +3,7 @@ import FocusSlider from "./Slider/Slider";
 export const Aboutus = () => {
   return (
     <>
-      <section className="mx-4 h-auto flex p-4 gap-6">
+      <section className="mx-4 h-auto flex p-4 gap-6 text-white">
         <article className="w-1/2 h-auto px-3 flex flex-col text-center">
           <p>
             El sueño empezó con una pequeña tienda en Jesús María pero gracias a

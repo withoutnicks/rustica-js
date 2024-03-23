@@ -28,10 +28,14 @@ export const CardForm = ({urlImg, nombPlato, preciPlato, onCantidadChange }) => 
           </div> 
         </div>
 
-        <div className="flex gap-4 items-center">
-          <button type="button" className="font-medium cursor-pointer" onClick={handleRestar}>-</button>
+        <div className="flex gap-4 items-center font-bold">
+          <button type="button" className="cursor-pointer" onClick={handleRestar}>
+            <img src="./icons/minus.svg"/>
+          </button>
           <p className="select-none">{cantidad}</p>
-          <button type="button" className="font-medium cursor-pointer" onClick={handleSumar}>+</button>
+          <button type="button" className="cursor-pointer" onClick={handleSumar}>
+            <img src="./icons/plus.svg"/>
+          </button>
         </div>      
       </div>
     </>

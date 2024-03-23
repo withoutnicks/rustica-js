@@ -22,8 +22,8 @@ function Form() {
 
   return (
     <>
-      <section className="bg-rus-primary w-full flex justify-center gap-3 p-5">
-        <article className="bg-white h-full p-3 rounded-lg">
+      <section className="bg-rus-bg w-full flex justify-center gap-3 p-5">
+        <article className="bg-white h-auto w-2/5 p-5 rounded-lg">
           <div className="flex gap-2 items-center">
             <img src="./icons/menu.svg" className="w-8" />
             <h3 className="font-semibold">Completa tu reserva</h3>
@@ -69,9 +69,9 @@ function Form() {
             />
 
             <div className="flex justify-between mx-4 my-6 items-center">
-              <Link className="bg-slate-500 text-white rounded-md py-2 px-4" to={"/home"}>Cancelar </Link>
+              <Link className="bg-slate-500 text-white rounded-md py-2 px-4 font-semibold" to={"/home"}>Cancelar </Link>
               <h2 className="font-medium">Total: S/. {total.toFixed(2)}</h2>
-              <button className="bg-green-500 text-white rounded-md py-2 px-4">Pagar</button>
+              <button className="bg-indigo-500 text-white rounded-md py-2 px-4 font-semibold">Pagar</button>
             </div>
 
             <label className="text-xs text-gray-700">

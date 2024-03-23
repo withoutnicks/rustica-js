@@ -26,7 +26,7 @@ function Login() {
 
   return (
     <>
-      <section className="h-screen bg-zinc-100 flex justify-center items-center">
+      <section className="h-screen bg-rus-secondary flex justify-center items-center">
         <article className="w-96 bg-zinc-900 rounded-lg shadow px-5 py-8">
           <h1 className="text-xl font-bold leading-tight tracking-tight text-zinc-100 text-center">
             Iniciar Sesion
@@ -66,7 +66,7 @@ function Login() {
 
             <button 
               type="submit" 
-              className="w-full text-dark bg-rus-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+              className="w-full text-white bg-rus-btn-primary font-medium rounded-lg text-sm px-5 py-3 text-center"
             >
               Entrar
             </button>

@@ -4,10 +4,10 @@ export const Navbar = () => {
   return (
     <>
       <nav className="flex justify-between items-center px-8 py-6">
-        <div className="w-36">
+        <div className="w-36 invert">
           <img src="./logo-lg.webp" alt="Logo extendido de Rustica" />
         </div>
-        <Link to={"/form"} className="bg-gray-900 text-white font-semibold h-10 flex items-center px-6 py-2 rounded-md" >
+        <Link to={"/form"} className="bg-rus-btn-primary text-white font-semibold flex items-center px-6 py-3 rounded-md" >
           Nueva Reserva
         </Link>
       </nav>
